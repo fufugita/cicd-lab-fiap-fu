@@ -6,8 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html', conteudo=datetime.now().strftime("%H:%M:%S"))
+    return render_template('index.html', conteudo="testando alo alo")
 
 if __name__ == '__main__':
     app.run(host ='0.0.0.0', port = 80, debug = True)
-    print('testando alo alo')
